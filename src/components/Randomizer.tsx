@@ -268,7 +268,7 @@ export default function Randomizer({ setHexes, board }: Props) {
       >
         <Button
           variant="contained"
-          style={{ margin: 5, padding: 10, backgroundColor: "#000000", color: "#ffffff" }}
+          style={{ margin: 5, padding: 10, backgroundColor: "#8cff66", color: "#000000" }}
           onClick={() => {
             const message: IncomingMessage = {
               board,
@@ -278,7 +278,7 @@ export default function Randomizer({ setHexes, board }: Props) {
           }}
           disabled={invalidConstraints}
         >
-          Randomize!
+          Generate! 
         </Button>
       </Tooltip>
 

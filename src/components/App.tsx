@@ -20,6 +20,7 @@ import {
 import { CatanBoard, ExpansionName } from "../types/boards";
 import { GitHub } from "@mui/icons-material";
 import { Analytics } from "@vercel/analytics/react"
+import bg_im from "../images/catan_bg.jpg";
 
 const TopPopper = function (props: PopperProps) {
   return <Popper {...props} placement="top" />;
@@ -84,6 +85,9 @@ function App() {
           '@global': {
             '@font-face': ['Nunito'],
           },
+          body: {
+            backgroundImage: `url(${bg_im})`,
+          },
         },
       },
     },
@@ -117,7 +121,7 @@ function App() {
           <Tooltip
             title={
               "Choose the Catan expansion to use. The default for each is" +
-              " the recommended beginner setup"
+              "the recommended beginner setup"
             }
             placement="bottom"
             arrow

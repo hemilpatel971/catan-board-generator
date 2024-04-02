@@ -92,7 +92,7 @@ export default function Board({ hexes, board }: Props) {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          backgroundColor: "#12518c",
+          backgroundColor: "#005cb3",
         }}
       > 
         
